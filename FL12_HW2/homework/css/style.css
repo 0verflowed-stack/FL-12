@@ -1,0 +1,233 @@
+h2 {
+    color: lightskyblue;
+    text-align: center;
+    font-weight: 300;
+}
+
+section:before {
+    content: "";
+    border-top: 40px solid lightskyblue;
+    border-right: 40px solid transparent;
+}
+
+.blocks h2, #contact h2 {
+    text-align: left;
+}
+
+nav, #home, section {
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.tm-main-nav ul li a:hover {
+    background-color: lightskyblue;
+    color: #fff;
+}
+
+.tm-banner {
+    background-image: linear-gradient(to right ,lightskyblue, burlywood);
+}
+
+.tm-banner-inner {
+    background-color: #fff;
+}
+
+.tm-banner-text{
+    text-shadow: 7px 7px 5px #333;
+    font-size: 2em; 
+    position: relative;
+    animation: moving 2s linear 0s 1 alternate;
+}
+
+.box-bg:hover {
+    background-color: lightgrey;
+    color: lightskyblue;
+}
+
+.flex-2-col {
+    display:flex;
+    align-items: center;
+}
+
+@keyframes moving {
+    from {
+        transform: translateX(200px);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.tm-section-description {
+    text-indent: 25px;
+    line-height: 30px;
+}
+
+.tm-team-img {
+    float:right;
+}
+
+.tm-main-content section .tm-context-boxs div h2 {
+    text-align: center;
+}
+
+.tm-context-boxs div .tm-section-description {
+    text-align: left;
+    text-indent: 25px;
+}
+
+.tm-main-content div ol {
+    list-style-type: lower-alpha;
+}
+
+.heading li {
+    width:fit-content;
+}
+
+.tm-main-content .heading li:hover::before {
+    content:">";   
+}
+
+.tm-main-content div .text::after {
+    content:"New";
+    color: red;
+    vertical-align: super;
+    font-size:13px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    display:inline-block;
+}
+
+.box-work {
+    padding: 10px 10px 3px 10px;    
+}
+
+.box-work div p::first-letter {
+    font-weight: 700;
+}
+
+.box-work div p {
+    font-style: italic;
+}
+
+.blocks div:last-child h2 {
+    color: black;
+}
+
+.blocks .gallery-container li:nth-child(odd), .blocks .gallery-container li:nth-child(odd) h2 {
+    background-color: lightskyblue;
+    color: white;
+ }
+
+.blocks div:first-child p:last-child {
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    font-style: italic;
+}
+
+#contact .form-control:not(#contact_message) {
+    border-color: lightskyblue;
+    border-style: none none solid none;
+}
+
+#contact .form-control:not(#contact_message):focus {
+    background-color: lightskyblue;
+}
+
+#contact_message {
+    background-image: url("../img/email-icon.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: 99% 98%;
+    border-color: lightskyblue;
+}
+
+.submit-btn {
+    float: right;
+    padding: 15px 35px;
+    background-color: white;
+    color: lightskyblue;
+    border-color: lightskyblue;
+}
+ 
+@media print {
+    .blocks .tm-section-title {
+        text-align: center;
+    }
+
+    .tm-team-description-container, .heading {
+        max-width: unset;
+        text-align: center;
+    }
+
+    .section{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .tm-banner {
+        background-image: none;
+    }
+    
+    body {
+        background-color: white;
+    }
+
+    section:before {
+        content: "";
+        border-top: 0px;
+        border-right: 0px;
+    }
+
+    .tm-main-content .heading li {
+        list-style-type: none;
+        text-decoration: none;
+    }
+
+    .heading {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    .heading ol {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .heading li {
+        width: unset;
+    }
+
+    .tm-main-content .heading li:nth-child(odd){
+        text-align: left;
+    }
+
+    .tm-main-content .heading li:nth-child(even){
+        text-align: right;
+    }
+
+    .tm-main-content .heading li:hover::before {
+        content:"";   
+    }
+    
+    .tm-main-content div .text::after {
+        content:"";
+    }
+
+    #home, body, .tm-main-content, .tm-team-description-container, .tm-section-description,
+    .heading .padding-medium, #tmCarousel, footer p {
+        padding-bottom: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .tm-description-container, .heading {
+        text-align: center;
+        max-width: unset;
+    }
+ 
+    .blocks .tm-content-box, .tm-sidebar, .tm-team-img, #about, .carousel-indicators, 
+     .tm-main-content section:nth-last-child(2) {
+        display: none;
+    }
+}
