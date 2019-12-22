@@ -1,0 +1,193 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #9d27b0;
+}
+.post-2 {
+	background: #9bb800;
+}
+.post-3 {
+	background: #ed5120;
+}
+.post-4 {
+	background: #9d27b0;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+body {
+  margin: 0 15% 0 15%;
+  background-color: #0b192f;
+}
+header {
+  margin-bottom: 2vh;
+}
+#title {
+  padding: 2vh 0 2vh 5%;
+  font-size:2rem;
+  font-weight: 100;
+  color: white;
+}
+#blog {
+  color: #9d27b0;
+}
+nav {
+  background-color: #024161;
+  display: flex;
+  justify-content: space-between;
+}
+nav ul {
+  margin: 0;
+  margin-right: 20px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100%;
+}
+nav ul li {
+  height:100%;
+  margin: 0;
+  padding: 4vh 30px 5vh 25px;
+}
+nav ul li:hover {
+  background-color: #1f52a4;
+}
+nav ul li a{
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+#head {
+  margin-top: 2vh;
+  background-image: url(/homework/img/post0.jpg);
+  background-size: cover;
+  height:300px;
+}
+#text0 {
+  padding-top: 150px;
+  padding-left: 5%;
+}
+#head h2 {
+  color: white;
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+#head p {
+  line-height: 1.5;
+  font-size: 12px;
+  font-weight: 200;
+  color: white;
+}
+#main {
+  width:73%;
+  height:200px;
+  display:table;
+  float:left;
+  table-layout: fixed;
+  margin-right: 0.8vw;
+}
+section {
+  display: flex;
+  color: white;
+}
+.contentImg {
+  display: table-cell;
+    height:100px;
+}
+.contentImg img{
+  width: 267px;
+}
+.contentText {
+  padding: 0 5% 1vh 5%;
+  display: table-cell;
+  height:160px;
+  font-size: 12px;
+}
+.contentText h2 {
+  font-size: 35px;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+#main section:nth-child(2n+1) #text  {
+  float:right;
+}
+#main section:nth-child(2n+2) #text  {
+  float:left;
+}
+#main section:nth-child(5n+1) .contentText {
+  background-color: #9d27b0;
+}
+#main section:nth-child(5n+2) .contentText {
+  background-color: #9bb800;
+}
+#main section:nth-child(5n+3) .contentText {
+  background-color: #ed5120;
+}
+#main section:nth-child(5n+4) .contentText {
+  background-color: #9d27b0;
+}
+#main section:nth-child(5n+5) .contentText {
+  background-color: #2d95bb;
+}
+aside {
+
+  display : flex;
+  flex-direction: column
+}
+aside section {
+  display : flex;
+  flex-direction: column;
+  margin-bottom: 1vh;
+}
+.contentImgAside {
+  background-color: #fff;
+}
+.contentImgAside img {
+width:100%;
+}
+.contentTextAside {
+  padding:0 5% 0 5%;
+  color: black;
+  font-weight: 300;
+  background-color: white;
+}
+.contentTextAside p {
+  font-size: 13px;
+}
+footer {
+  padding-top:5vh;
+  padding-left: 2vw;
+  display: table;
+  margin-top: 3vh;
+  float:left;
+  color: white;
+  font-weight: 200;
+  width: 100%;
+  height:65px;
+  background-color: #024161;
+}
+footer div {
+  display: table-cell;
+}
+@media (max-width:768px){
+  aside section {
+    float:left;
+    display: table-cell;
+  }
+}
+@media (max-width:480px){
+  aside section {
+    float:left;
+    display: table-cell;
+  }
+}
