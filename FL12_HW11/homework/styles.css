@@ -1,0 +1,11 @@
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+.heading {
+    display: flex;
+    align-items: flex-end;
+}
+i.material-icons {
+    color: rgb(237, 188, 11);
+}
